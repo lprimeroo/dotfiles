@@ -94,13 +94,20 @@ source $ZSH/oh-my-zsh.sh
 # aliases
 
 alias vi="nvim"
+
+# requires `brew install bat`
 alias cat="bat"
+
+# requires `brew install nvim`
 alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
+
+# builds me the latest Chapel
 alias cpl="source util/quickstart/setchplenv.bash; make; make check; make test_env"
-alias priv="ssh ubuntu@test.hackerrank.net"
-alias cron="ssh ubuntu@10.1.16.10"
+
+# local database
 alias mysql="mysql -uroot -pmysql"
+
 alias rmds="find . -name *.DS_Store -type f -delete"
 alias reload="source ~/.zshrc"
 
